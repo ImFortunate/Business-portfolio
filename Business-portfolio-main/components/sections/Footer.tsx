@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { isHttpUrl } from "@/lib/links";
 import { footer, site } from "@/content";
 
 export function Footer() {
@@ -9,8 +11,7 @@ export function Footer() {
       <div className="grid grid-cols-2 gap-10 border-b border-border/10 pb-14 md:grid-cols-4">
         <div className="col-span-2 flex flex-col gap-3 md:col-span-1">
           <Link href="#top" className="flex items-center gap-2.5" aria-label={`${site.name} home`}>
-            <span className="h-6 w-6 rounded-md bg-accent" aria-hidden="true" />
-            <span className="text-base font-medium">{site.name}</span>
+            <Image src={site.logo} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
           </Link>
           <p className="max-w-[20ch] text-sm text-muted">{footer.brandBlurb}</p>
         </div>
@@ -35,7 +36,11 @@ export function Footer() {
           <ul className="flex flex-col gap-3">
             {footer.follow.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="text-sm text-muted transition-colors hover:text-text">
+                <a
+                  href={isHttpUrl(link.href) ? link.href : "#"}
+                  {...(isHttpUrl(link.href) && { target: "_blank", rel: "noopener noreferrer" })}
+                  className="text-sm text-muted transition-colors hover:text-text"
+                >
                   {link.label}
                 </a>
               </li>

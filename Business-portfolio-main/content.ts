@@ -4,10 +4,26 @@
 import content from "*.webp";
 
 export const site = {
-  name: "[studio name]",
-  domain: "[studio].com",
-  email: "hello@[studio].com",
+  name: "Four Band Agency",
+  logo: "/logo.png",
+  domain: "fourbandagency.com",
+  url: "https://fourbandagency.com",
+  email: "hello@mail.fourbandagency.com",
   calendlyUrl: "[CALENDLY LINK]",
+  // Official business X profile. Team photos link here once this is a real https:// URL.
+  xUrl: "[X PROFILE URL]",
+};
+
+export const bookingModal = {
+  title: "Book a free call",
+  intro:
+    "Tell us a little about your project and when suits you. We reply within 24 hours to confirm a time.",
+  submit: "Send request",
+  submitting: "Sending…",
+  successTitle: "Request sent",
+  successText:
+    "Thanks, we've got your details. We'll be in touch within 24 hours to confirm your call.",
+  close: "Close",
 };
 
 export const nav = {
@@ -45,7 +61,7 @@ export const logos = {
   clients: [
     { name: "Supaquery" },
     { name: "Many" },
-    { name: "X-Sellship" },
+    { name: "FastIQ" },
     { name: "NGN Games" },
     { name: "Wootella" },
   ] as { name: string; logo?: string }[],
@@ -243,7 +259,8 @@ export const process = {
 
 export const testimonialsSection = {
   eyebrow: "Testimonials",
-  heading: "What clients {{say}}",
+  heading: "What Our Clients {{Say}}",
+  text: "Don't just take our word for it. Here's what clients have to say about working with us.",
 };
 
 export const cta = {
@@ -274,12 +291,11 @@ export const footer = {
     },
   ],
   follow: [
-    { label: "LinkedIn", href: "#" },
-    { label: "X", href: "#" },
-    { label: "Instagram", href: "#" },
+    { label: "X", href: "https://x.com/fourbandagency?s=11" },
+    { label: "LinkedIn", href: "" },
   ],
   legal: [
-    { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
   ],
 };

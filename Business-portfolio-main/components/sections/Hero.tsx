@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { BookCallButton } from "@/components/booking/BookCallButton";
 import { Italic } from "@/components/ui/Italic";
 import { Pill } from "@/components/ui/Pill";
 import { Reveal } from "@/components/motion/Reveal";
@@ -40,9 +41,9 @@ export function Hero() {
 
       <Reveal delay={0.24}>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Button href="#contact" variant="primary" arrow>
+          <BookCallButton variant="primary" arrow>
             {hero.primaryCta}
-          </Button>
+          </BookCallButton>
           <Button href="#work" variant="outline">
             {hero.secondaryCta}
           </Button>

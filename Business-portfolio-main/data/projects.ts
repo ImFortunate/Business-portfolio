@@ -42,15 +42,16 @@ export const projects: Project[] = [
     url: "https://divine-homes.netlify.app/",
   },
   {
-    slug: "study-buddy",
-    name: "StudyBuddy",
-    tags: ["EdTech", "Education", "Web App"],
+    slug: "dating-a-designer",
+    name: "Dating a Designer",
+    tags: ["Dating", "Community", "Web App"],
     description:
-      "A student-focused learning platform designed to help students organize their learning, study more effectively and stay on track.",
-    image: "/image copy 2.png",
-    imageLabel: "StudyBuddy learning dashboard preview",
-    url: "https://studybuddy-inky.vercel.app/",
+      "A dating space for designers, where people meet through the work they make and find matches with good taste and better chemistry.",
+    image: "/image copy 10.png",
+    imageLabel: "Dating a Designer landing page preview",
+    url: "https://datingadesigner.fun/",
   },
+
   {
     slug: "saasgrave",
     name: "SaaSGrave",
@@ -112,7 +113,16 @@ export const projects: Project[] = [
     imageLabel: "Verive verified tech events platform preview",
     url: "https://verive.vercel.app/",
   },
-
+  {
+    slug: "study-buddy",
+    name: "StudyBuddy",
+    tags: ["EdTech", "Education", "Web App"],
+    description:
+      "A student-focused learning platform designed to help students organize their learning, study more effectively and stay on track.",
+    image: "/image copy 2.png",
+    imageLabel: "StudyBuddy learning dashboard preview",
+    url: "https://studybuddy-inky.vercel.app/",
+  },
   {
     slug: "find-any-book",
     name: "Find Any Book",
@@ -173,16 +183,7 @@ export const projects: Project[] = [
     imageLabel: "Haoshu outreach research tool preview",
     url: "https://haoshu.followerstomoney.com/",
   },
-  {
-    slug: "dating-a-designer",
-    name: "Dating a Designer",
-    tags: ["Dating", "Community", "Web App"],
-    description:
-      "A dating space for designers, where people meet through the work they make and find matches with good taste and better chemistry.",
-    image: "/image copy 10.png",
-    imageLabel: "Dating a Designer landing page preview",
-    url: "https://datingadesigner.fun/",
-  },
+
   {
     slug: "thrivecore-initiative",
     name: "ThriveCore Initiative",

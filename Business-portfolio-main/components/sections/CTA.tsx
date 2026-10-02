@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { BookCallButton } from "@/components/booking/BookCallButton";
 import { Reveal } from "@/components/motion/Reveal";
 import { parseAccent } from "@/lib/richText";
 import { cta, site } from "@/content";
@@ -16,9 +16,9 @@ export function CTA() {
           </h2>
           <p className="max-w-md text-body-lg text-on-accent/80">{cta.subtext}</p>
           <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row">
-            <Button href={site.calendlyUrl} variant="dark" arrow>
+            <BookCallButton variant="dark" arrow>
               {cta.primaryCta}
-            </Button>
+            </BookCallButton>
             <a
               href={`mailto:${site.email}`}
               className="text-base font-medium underline decoration-on-accent/40 underline-offset-4 transition-colors hover:decoration-on-accent focus-visible:outline-2 focus-visible:outline-on-accent"

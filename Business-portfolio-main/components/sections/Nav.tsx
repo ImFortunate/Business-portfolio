@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
@@ -31,8 +32,7 @@ export function Nav() {
     >
       <div className="section-container flex h-20 items-center justify-between">
         <Link href="#top" className="flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-accent" aria-label={`${site.name} home`}>
-          <span className="h-6 w-6 rounded-md bg-accent" aria-hidden="true" />
-          <span className="text-base font-medium">{site.name}</span>
+          <Image src={site.logo} alt="" width={40} height={40} className="h-10 w-10 object-contain" loading="eager" />
         </Link>
 
         <nav
