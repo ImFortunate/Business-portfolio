@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     description,
     url: siteUrl,
     siteName: site.name,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: `${site.name} logo` }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — Design & Development Studio`,
     description,
-    images: ["/og-image.jpg"],
+    images: [{ url: "/og-image.jpg", alt: `${site.name} logo` }],
   },
 };
 

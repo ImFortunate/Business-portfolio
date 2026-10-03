@@ -4,7 +4,7 @@
 import content from "*.webp";
 
 export const site = {
-  name: "Four Band Agency",
+  name: "FourBand Agency",
   logo: "/logo.png",
   domain: "fourbandagency.com",
   url: "https://fourbandagency.com",
